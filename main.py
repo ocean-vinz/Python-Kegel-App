@@ -25,7 +25,7 @@ def reset_timer():
     reps = 0
 
 
-# ---------------------------- TIMER MECHANISM ------------------------------- # 
+# ---------------------------- TIMER------------------------------- # 
 
 def start_timer():
     global reps, l_break_reps
@@ -48,7 +48,7 @@ def start_timer():
         title_label.config(text="Squeeze", fg=GREEN)
 
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
+# ---------------------------- COUNTDOWN------------------------------- #
 def count_down(count):
 
     count_min = math.floor(count / 60)
@@ -79,7 +79,7 @@ title_label = Label(text="Timer", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 50))
 title_label.grid(column=1, row=0)
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
-tomato_img = PhotoImage(file="~/Documents/Pycharm_Project/Kegel/tomato.png")
+tomato_img = PhotoImage(file="tomato.png")
 canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=1)
