@@ -9,7 +9,9 @@ This project is a simple kegel countdown app. It's basically a timer like pomodo
 do this for 10 reps.
 
 It is recommended to do a 3 sets daily.
-	
+
+![name-of-you-image](https://github.com/ocean-vinz/Python-Kegel-App/blob/master/Kegel-Screen-Shot.png?raw=true)
+
 ## Technologies
 Project is created with:
 * Python 3.9.5
