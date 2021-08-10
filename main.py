@@ -69,7 +69,7 @@ def count_down(count):
         check_marks.config(text=marks)
 
 
-# ---------------------------- UI SETUP ------------------------------- #
+# ---------------------------- UI SETUP ------------------------------ #
 window = Tk(className='kegel')
 window.title("Kegel Exercise")
 window.config(padx=100, pady=50, bg=YELLOW)
