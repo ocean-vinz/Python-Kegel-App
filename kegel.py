@@ -42,10 +42,14 @@ def start_timer():
         reps = 0
     elif reps % 2 == 0:
         count_down(short_break_sec)
-        title_label.config(text="Breathe", fg=PINK)
+        title_label.config(text="Breathe", fg=PINK, bg=YELLOW)
+        canvas.config(bg=YELLOW)
+        window.config(bg=YELLOW)
     else:
         count_down(work_sec)
-        title_label.config(text="Squeeze", fg=GREEN)
+        title_label.config(text="Squeeze", fg=GREEN, bg=RED)
+        canvas.config(bg=RED)
+        window.config(bg=RED)
 
 
 # ---------------------------- COUNTDOWN------------------------------- #
@@ -95,3 +99,4 @@ check_marks.grid(column=1, row=3)
 
 
 window.mainloop()
+
