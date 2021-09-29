@@ -38,19 +38,23 @@ def start_timer():
     if reps % 20 == 0:
         count_down(long_break_sec)
         l_break_reps += 1
-        title_label.config(text=f"L_Break_{l_break_reps}", fg=RED)
+        title_label.config(text=f"L_Break_{l_break_reps}", fg=RED, bg=YELLOW)
+        canvas.config(bg=YELLOW)
+        window.config(bg=YELLOW)
+        check_marks.config(bg=YELLOW)
         reps = 0
     elif reps % 2 == 0:
         count_down(short_break_sec)
         title_label.config(text="Breathe", fg=PINK, bg=YELLOW)
         canvas.config(bg=YELLOW)
         window.config(bg=YELLOW)
+        check_marks.config(bg=YELLOW)
     else:
         count_down(work_sec)
         title_label.config(text="Squeeze", fg=GREEN, bg=RED)
         canvas.config(bg=RED)
         window.config(bg=RED)
-
+        check_marks.config(bg=RED)
 
 # ---------------------------- COUNTDOWN------------------------------- #
 def count_down(count):
